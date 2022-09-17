@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/half_round_bg"
+            android:padding="10dp">
+
+            <com.nebulacompanies.nebula.view.MyBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Login"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp">
+
+            </com.nebulacompanies.nebula.view.MyBoldTextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:orientation="vertical">
+
+            <com.nebulacompanies.nebula.view.MyBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Enter Your Block and Flat No for get OTP \n on your registered mobile no."
+                android:textColor="@color/otp_text_bg"
+                android:textSize="16sp">
+
+            </com.nebulacompanies.nebula.view.MyBoldTextView>
+
+
+            <EditText
+                android:id="@+id/edtBlockId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/drawable_edittext_bg"
+                android:gravity="left|center_vertical"
+                android:hint="@string/enter_block_no"
+                android:inputType="textCapCharacters"
+                android:longClickable="false"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:selectAllOnFocus="true" />
+
+
+            <EditText
+                android:id="@+id/edtFlatNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/drawable_edittext_bg"
+                android:gravity="left|center_vertical"
+                android:hint="@string/enter_flat_no"
+                android:inputType="number"
+                android:longClickable="false"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:selectAllOnFocus="true" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="2">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_bg_button"
+                    android:layout_weight="1">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/continues"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_bg_button"
+                    android:layout_weight="1">
+
+                </Button>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_sent">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
